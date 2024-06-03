@@ -13,8 +13,8 @@ import extraMilk from '../../../images/icons/extraMilk.svg'
 const ProductSingle = () => {
     const { productId } = useParams()
     const dispatch = useDispatch()
-    dispatch(showSimgleProductByIdAction(productId))
-    const singleProduct = useSelector(state => state.singleProduct)
+    dispatch(showSimgleProductByIdAction(productId)) //  При загрузке страницы передаю ID в stpre, там сохраняю отдельно оюъект
+    const singleProduct = useSelector(state => state.singleProduct)// Подучаю объект из store
     const navigate = useNavigate()
     console.log(singleProduct);
 

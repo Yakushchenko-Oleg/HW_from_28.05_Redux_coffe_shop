@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { CiShoppingBasket } from 'react-icons/ci';
 import { useDispatch, useSelector } from 'react-redux';
 import {useParams, Link} from "react-router-dom";

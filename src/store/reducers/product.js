@@ -103,7 +103,7 @@ const ProductReducer = (state = initState, { type, payload }) => {
         case ADD_PRODUCT_TO_CART:
             return {...state, cart: [...state.cart, state.data.find(item => item.id === payload)]}
         case SHOW_SINGLE_PRODUCT_BY_ID:
-            return {...state, singleProduct: state.products.find(item => item.id === payload)}
+            return {...state, singleProduct: state.data.find(item => item.id === payload)}
         default:
             return state;
     }
